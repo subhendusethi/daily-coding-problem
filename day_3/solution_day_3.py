@@ -1,5 +1,3 @@
-import re
-
 class Node(object):
 	def __init__(self, val: str, left: 'Node'= None, right: 'Node'=None):
 		self.val = val
