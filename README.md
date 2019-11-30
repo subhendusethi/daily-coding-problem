@@ -103,3 +103,23 @@ You can assume that the messages are decodable. For example, '001' is not allowe
 
 Solution: [Day 7](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_7/solution_day_7.py)
 
+
+## Daily Coding Problem: Problem #8 [Easy]
+
+This problem was asked by Google.
+
+A unival tree (which stands for "universal value") is a tree where all nodes under it have the same value.
+
+Given the root to a binary tree, count the number of unival subtrees.
+
+For example, the following tree has 5 unival subtrees:
+```python
+   0
+  / \
+ 1   0
+    / \
+   1   0
+  / \
+ 1   1
+```
+Solution: [Day 8](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_8/solution_day_8.py)
