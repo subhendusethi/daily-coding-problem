@@ -90,3 +90,16 @@ If using a language that has no pointers (such as Python), you can assume you ha
 
 Solution: [Day 6](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_6/solution_day_6.py)
 
+
+## Daily Coding Problem: Problem #7 [Medium]
+
+This problem was asked by Facebook.
+
+Given the mapping a = 1, b = 2, ... z = 26, and an encoded message, count the number of ways it can be decoded.
+
+For example, the message '111' would give 3, since it could be decoded as 'aaa', 'ka', and 'ak'.
+
+You can assume that the messages are decodable. For example, '001' is not allowed.
+
+Solution: [Day 7](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_7/solution_day_7.py)
+
