@@ -88,5 +88,5 @@ An XOR linked list is a more memory efficient doubly linked list. Instead of eac
 If using a language that has no pointers (such as Python), you can assume you have access to get_pointer and dereference_pointer functions that converts between nodes and memory addresses.
 
 
-Solution: [Day 5](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_6/solution_day_6.py)
+Solution: [Day 6](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_6/solution_day_6.py)
 
