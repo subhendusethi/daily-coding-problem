@@ -3,38 +3,43 @@ class Node:
 		self.val = val
 		self.left = left
 		self.right = right
-		self.sub_val = None
-		self.is_sub_val = False
 '''
 	Time Complexity: O(N) 
-	Space Complexity: O(N) (Can be reduced to O(1) by returning sub_val
-							and is_sub_val at every step of recursion to parent.)
+	Space Complexity: O(H) 
 	N : Number of nodes in the tree
+	H : Height of the tree.
 '''
 class Day8:
 	def execute(self, head):
-		if head == None:
-			return 0
-		if head.left == None and head.right == None:
-			head.sub_val = 1
-			head.is_sub_val = True
-			return 1
+		count, _ = self.__execute_helper(head)
+		return count
+	def __execute_helper(self, node):
+		if node == None:
+			return 0, True
+		if node.left == None and node.right == None:
+			return 1, True
 		res = 0
-		if head.left:
-			self.execute(head.left)
-			res+=head.left.sub_val
-		if head.right:
-			self.execute(head.right)
-			res+=head.right.sub_val
-		if head.left and head.right and head.left.val == head.right.val == head.val and head.left.is_sub_val and head.right.is_sub_val:
+		curr_is_sub_val = False
+		left_res, left_is_sub_val = None, False
+		right_res, right_is_sub_val = None, False
+		if node.left:
+			left_res, left_is_sub_val = self.__execute_helper(node.left)
+			res+=left_res
+		if node.right:
+			right_res, right_is_sub_val = self.__execute_helper(node.right)
+			res+=right_res
+		if node.left and node.right \
+		and node.left.val == node.right.val == node.val \
+		and left_is_sub_val and right_is_sub_val:
 			res+=1
-			head.is_sub_val = True
-		if head.left == None and head.right.val == head.val and head.right.is_sub_val:
+			curr_is_sub_val = True
+		if node.left == None and node.right.val == node.val and right_is_sub_val:
 			res+=1
-		if head.right == None and head.left.val == head.val and head.left.is_sub_val:
+			curr_is_sub_val = True
+		if node.right == None and node.left.val == node.val and left_is_sub_val:
 			res+=1
-		head.sub_val = res
-		return res
+			curr_is_sub_val = True
+		return res, curr_is_sub_val
 
 day_8 = Day8()
 
@@ -43,6 +48,9 @@ assert day_8.execute(node) == 15
 
 node = Node(0, Node(1), Node(0, Node(1, Node(1), Node(1)), Node(0))) 
 assert day_8.execute(node) == 5
+assert day_8.execute(node.left) == 1
+assert day_8.execute(node.right) == 4
+assert day_8.execute(node.right.left) == 3
 
 node = Node(0)
 assert day_8.execute(node) == 1
