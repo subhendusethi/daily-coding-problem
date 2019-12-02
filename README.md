@@ -135,3 +135,9 @@ For example, [2, 4, 6, 2, 5] should return 13, since we pick 2, 6, and 5. [5, 1,
 Follow-up: Can you do this in O(N) time and constant space?
 Solution O(N) Space Complexity: [Day 9](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_9/solution_day_9.py)
 Solution O(1) Space Complexity: [Day 9](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_9/solution_day_9_efficient.py)
+
+
+Daily Coding Problem: Problem #10 [Medium]
+This problem was asked by Apple.
+
+Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
