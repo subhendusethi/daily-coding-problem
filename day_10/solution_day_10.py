@@ -8,7 +8,7 @@ random.seed(calendar.timegm(time.gmtime()))
 
 def delay(func:types.FunctionType, delay_in_ms:int, t_id:str):
 	print("Scheduled execution of Function: {} after {} ms with thread_id: {}".format(func.__name__, delay_in_ms, t_id))
-	time.sleep(delay_in_ms)
+	time.sleep(delay_in_ms/1000)
 	print("Function: {} with {} ms delay with thread_id: {} started execution.".format(func.__name__, delay_in_ms, t_id))
 	func(10, 20)
 	print("Function: {} with {} ms delay with thread_id: {} completed execution.".format(func.__name__, delay_in_ms, t_id))
@@ -25,7 +25,7 @@ def scheduler(func:types.FunctionType, delay_in_ms:int):
 	thread.start()
 
 i = 1
-while i<10:
+while i<100:
 	scheduler(binom_n2, i)
 	i+=1
 
