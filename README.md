@@ -141,3 +141,5 @@ Daily Coding Problem: Problem #10 [Medium]
 This problem was asked by Apple.
 
 Implement a job scheduler which takes in a function f and an integer n, and calls f after n milliseconds.
+
+Solution: [Day 10](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_10/solution_day_10.py)
