@@ -39,12 +39,12 @@ class Trie:
 			return None
 	def print_auto_completed_words(self, prefix:str):
 		prefix_node = self.__find_node_by_prefix(self.head, prefix)
-		self.print_at_node(prefix_node, prefix[:-1])
+		self.__print_at_node(prefix_node, prefix[:-1])
 
 	def __print_at_node(self, node:'Node', prefix:str=""):
 		self.__print_at_node_helper(node, prefix)
 	def print_at_head(self):
-		self.print_at_node(self.head)
+		self.__print_at_node(self.head)
 	def __print_at_node_helper(self, node:'Node', prefix:str):
 		if node == None:
 			return
