@@ -133,7 +133,9 @@ Given a list of integers, write a function that returns the largest sum of non-a
 For example, [2, 4, 6, 2, 5] should return 13, since we pick 2, 6, and 5. [5, 1, 1, 5] should return 10, since we pick 5 and 5.
 
 Follow-up: Can you do this in O(N) time and constant space?
+
 Solution O(N) Space Complexity: [Day 9](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_9/solution_day_9.py)
+
 Solution O(1) Space Complexity: [Day 9](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_9/solution_day_9_efficient.py)
 
 
@@ -169,3 +171,12 @@ For example, if N is 4, then there are 5 unique ways:
 What if, instead of being able to climb 1 or 2 steps at a time, you could climb any number from a set of positive integers X? For example, if X = {1, 3, 5}, you could climb 1, 3, or 5 steps at a time.
 
 Solution: [Day 12](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_12/solution_day_12.py)
+
+Daily Coding Problem: Problem #13 [Hard]
+This problem was asked by Amazon.
+
+Given an integer k and a string s, find the length of the longest substring that contains at most k distinct characters.
+
+For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
+
+Solution: [Day 12](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_13/solution_day_13.py)
