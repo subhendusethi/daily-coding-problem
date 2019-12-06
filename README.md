@@ -179,4 +179,13 @@ Given an integer k and a string s, find the length of the longest substring that
 
 For example, given s = "abcba" and k = 2, the longest substring with k distinct characters is "bcb".
 
-Solution: [Day 12](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_13/solution_day_13.py)
+Solution: [Day 13](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_13/solution_day_13.py)
+
+Daily Coding Problem: Problem #14 [Medium]
+This problem was asked by Google.
+
+The area of a circle is defined as πr^2. Estimate π to 3 decimal places using a Monte Carlo method.
+
+Hint: The basic equation of a circle is x2 + y2 = r2.
+
+Solution: [Day 14](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_14/solution_day_14.py)
