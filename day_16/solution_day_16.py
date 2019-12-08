@@ -68,6 +68,21 @@ assert day_16.get_last(2) == 11
 assert day_16.get_last(1) == 12
 
 
+day_16.record(100)
+day_16.record(101)
+
+'''
+	       state
+	[10, 11, 12, 100, 101]
+	  s                 e
+'''
+
+assert day_16.get_last(5) == 10
+assert day_16.get_last(4) == 11
+assert day_16.get_last(3) == 12
+assert day_16.get_last(2) == 100
+assert day_16.get_last(1) == 101
+
 day_16.execute(1)
 day_16.record(1)
 assert day_16.get_last(1) == 1
