@@ -199,7 +199,7 @@ Given a stream of elements too large to store in memory, pick a random element f
 
 Solution: [Day 15](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_15/solution_day_15.py)
 
-## Daily Coding Problem: Problem #15 [Medium]
+## Daily Coding Problem: Problem #16 [Easy]
 
 This problem was asked by Twitter.
 
@@ -211,3 +211,47 @@ You should be as efficient with time and space as possible.
 
 
 Solution: [Day 16](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_16/solution_day_16.py)
+
+## Daily Coding Problem: Problem #17 [Easy]
+
+Good morning! Here's your coding interview problem for today.
+
+This problem was asked by Google.
+
+Suppose we represent our file system by a string in the following manner:
+
+The string ``"dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext"`` represents:
+
+```python
+dir
+    subdir1
+    subdir2
+        file.ext
+```
+
+The directory dir contains an empty sub-directory subdir1 and a sub-directory subdir2 containing a file file.ext.
+
+The string ``"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"``represents:
+```python
+dir
+    subdir1
+        file1.ext
+        subsubdir1
+    subdir2
+        subsubdir2
+            file2.ext
+```
+The directory dir contains two sub-directories subdir1 and subdir2. subdir1 contains a file file1.ext and an empty second-level sub-directory subsubdir1. subdir2 contains a second-level sub-directory subsubdir2 containing a file file2.ext.
+
+We are interested in finding the longest (number of characters) absolute path to a file within our file system. For example, in the second example above, the longest absolute path is ```"dir/subdir2/subsubdir2/file2.ext"```, and its length is 32 (not including the double quotes).
+
+Given a string representing the file system in the above format, return the length of the longest absolute path to a file in the abstracted file system. If there is no file in the system, return 0.
+
+Note:
+
+The name of a file contains at least a period and an extension.
+
+The name of a directory or sub-directory will not contain a period.
+
+
+Solution: [Day 17](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_17/solution_day_17.py)
