@@ -1,11 +1,19 @@
 FILE_TYPE = "file"
 DIR_TYPE = "dir"
 
+'''
+	Space Complexity: O(MAX_LEVEL)
+	Time Complexity: O(N)
+	Test solution at: https://leetcode.com/problems/longest-absolute-file-path
+'''
+
 class Token:
-	def __init__(self, string:str, level:int, ttype:int):
+	def __init__(self, string:str, level:int, ttype:str):
 		self.string = string
 		self.level = level
 		self.ttype = ttype
+	def __str__(self):
+		return "<Token string:%s level:%d type:%s>" % (self.string, self.level, self.ttype)
 
 class Day17:
 	def execute(self, string:str) -> int:
@@ -18,22 +26,28 @@ class Day17:
 			curr_level = curr_token.level
 			curr_str = curr_token.string
 			if curr_ttype == DIR_TYPE:
-				while len(stack):
-					top = stack[-1]
-					if top[0] >= curr_level:
-						stack.pop(-1)
-					else:
-						break
+				self.__trim_stack(stack, curr_level)
 				if len(stack):
 					top = stack[-1]
 					stack.append((curr_level, top[1] + len(curr_str) + 1))
 				else:
 					stack.append((curr_level, len(curr_str) + 1))
 			elif curr_ttype == FILE_TYPE:
-				max_len = max(max_len, stack[-1][1] + len(curr_str))
+				self.__trim_stack(stack, curr_level)
+				if len(stack):
+					max_len = max(max_len, stack[-1][1] + len(curr_str))
+				else:
+					max_len = max(max_len, len(curr_str))
 			curr_index = return_index
 		return max_len
 
+	def __trim_stack(self, stack, curr_level):
+		while len(stack):
+			top = stack[-1]
+			if top[0] >= curr_level:
+				stack.pop(-1)
+			else:
+				break
 	def __parser(self, string:str, index:int) -> ((str,str),int):
 		res = ""
 		ttype = None
@@ -56,6 +70,7 @@ class Day17:
 
 day_17 = Day17()
 
+assert day_17.execute("dir\n    file.txt") == 12
 assert day_17.execute("dir\n\ttemp.txt") == 12
 assert day_17.execute("dir\n\tsubdir1\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n") == 0
 assert day_17.execute("dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext") == 32
