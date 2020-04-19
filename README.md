@@ -286,3 +286,19 @@ A builder is looking to build a row of N houses that can be of K different color
 Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
 
 Solution: [Day 19](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_19/solution_day_19.py)
+
+
+## Daily Coding Problem: Problem #20 [Easy]
+
+
+This problem was asked by Google.
+
+Given two singly linked lists that intersect at some point, find the intersecting node. The lists are non-cyclical.
+
+For example, given A = 3 -> 7 -> 8 -> 10 and B = 99 -> 1 -> 8 -> 10, return the node with value 8.
+
+In this example, assume nodes with the same value are the exact same node objects.
+
+Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
+
+Solution: [Day 20](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_20/solution_day_20.py)
