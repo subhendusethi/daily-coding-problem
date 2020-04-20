@@ -302,3 +302,13 @@ In this example, assume nodes with the same value are the exact same node object
 Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
 
 Solution: [Day 20](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_20/solution_day_20.py)
+
+## Daily Coding Problem: Problem #21 [Easy]
+
+
+This problem was asked by Snapchat.
+
+Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
+
+For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
+Solution: [Day 21](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_21/solution_day_21.py)
