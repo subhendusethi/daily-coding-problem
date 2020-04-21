@@ -333,3 +333,24 @@ For example, given the set of words 'quick', 'brown', 'the', 'fox', and the stri
 Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 
 Solution: [Day 22](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_22/solution_day_22.py)
+
+## Daily Coding Problem: Problem #23 [Easy]
+
+
+This problem was asked by Google.
+
+You are given an M by N matrix consisting of booleans that represents a board. Each True boolean represents a wall. Each False boolean represents a tile you can walk on.
+
+Given this matrix, a start coordinate, and an end coordinate, return the minimum number of steps required to reach the end coordinate from the start. If there is no possible path, then return null. You can move up, left, down, and right. You cannot move through walls. You cannot wrap around the edges of the board.
+
+For example, given the following board:
+```python
+[
+        [False, False, False, False],
+        [True, True, False, True],
+        [False, False, False, False],
+        [False, False, False, False]
+]
+```
+and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
+Solution: [Day 23](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_22/solution_day_23.py)
