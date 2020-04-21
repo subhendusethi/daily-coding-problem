@@ -285,7 +285,7 @@ A builder is looking to build a row of N houses that can be of K different color
 
 Given an N by K matrix where the nth row and kth column represents the cost to build the nth house with kth color, return the minimum cost which achieves this goal.
 
-Solution: [Day 19](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_19/solution_day_19.py)
+Solution: [Day 19](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-19/solution_day_19.py)
 
 
 ## Daily Coding Problem: Problem #20 [Easy]
@@ -301,7 +301,7 @@ In this example, assume nodes with the same value are the exact same node object
 
 Do this in O(M + N) time (where M and N are the lengths of the lists) and constant space.
 
-Solution: [Day 20](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_20/solution_day_20.py)
+Solution: [Day 20](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-20/solution_day_20.py)
 
 ## Daily Coding Problem: Problem #21 [Easy]
 
@@ -311,17 +311,8 @@ This problem was asked by Snapchat.
 Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
 
 For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
-Solution: [Day 21](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_21/solution_day_21.py)
+Solution: [Day 21](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-21/solution_day_21.py)
 
-## Daily Coding Problem: Problem #21 [Easy]
-
-
-This problem was asked by Snapchat.
-
-Given an array of time intervals (start, end) for classroom lectures (possibly overlapping), find the minimum number of rooms required.
-
-For example, given [(30, 75), (0, 50), (60, 150)], you should return 2.
-Solution: [Day 21](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_21/solution_day_21.py)
 
 ## Daily Coding Problem: Problem #22 [Medium]
 
@@ -332,7 +323,7 @@ For example, given the set of words 'quick', 'brown', 'the', 'fox', and the stri
 
 Given the set of words 'bed', 'bath', 'bedbath', 'and', 'beyond', and the string "bedbathandbeyond", return either ['bed', 'bath', 'and', 'beyond] or ['bedbath', 'and', 'beyond'].
 
-Solution: [Day 22](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_22/solution_day_22.py)
+Solution: [Day 22](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-22/solution_day_22.py)
 
 ## Daily Coding Problem: Problem #23 [Easy]
 
@@ -354,7 +345,7 @@ For example, given the following board:
 ```
 and start = (3, 0) (bottom left) and end = (0, 0) (top left), the minimum number of steps required to reach the end is 7, since we would need to go through (1, 2) because there is a wall everywhere else on the second row.
 
-Solution: [Day 23](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_23/solution_day_23.py)
+Solution: [Day 23](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-23/solution_day_23.py)
 
 ## Daily Coding Problem: Problem #24 [Medium]
 
@@ -370,4 +361,4 @@ Design a binary tree node class with the following methods:
 
 You may augment the node to add parent pointers or any other property you would like. You may assume the class is used in a single-threaded program, so there is no need for actual locks or mutexes. Each method should run in O(h), where h is the height of the tree.
 
-Solution: [Day 24](https://github.com/subhendusethi/daily-coding-problem/blob/master/day_24/solution_day_24.py)
+Solution: [Day 24](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-24/solution_day_24.py)
