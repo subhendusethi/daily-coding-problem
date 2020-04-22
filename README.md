@@ -379,3 +379,16 @@ For example, given the regular expression "ra." and the string "ray", your funct
 Given the regular expression ".*at" and the string "chat", your function should return true. The same regular expression on the string "chats" should return false.
 
 Solution: [Day 25](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-25/solution_day_25.py)
+
+
+## Daily Coding Problem: Problem #26 [Medium]
+
+This problem was asked by Google.
+
+Given a singly linked list and an integer k, remove the kth last element from the list. k is guaranteed to be smaller than the length of the list.
+
+The list is very long, so making more than one pass is prohibitively expensive.
+
+Do this in constant space and in one pass.
+
+Solution: [Day 26](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-26/solution_day_26.py)
