@@ -392,3 +392,15 @@ The list is very long, so making more than one pass is prohibitively expensive.
 Do this in constant space and in one pass.
 
 Solution: [Day 26](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-26/solution_day_26.py)
+
+## Daily Coding Problem: Problem #27 [Easy]
+
+This problem was asked by Facebook.
+
+Given a string of round, curly, and square open and closing brackets, return whether the brackets are balanced (well-formed).
+
+For example, given the string "([])[]({})", you should return true.
+
+Given the string "([)]" or "((()", you should return false.
+
+Solution: [Day 27](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-27/solution_day_27.py)
