@@ -438,3 +438,13 @@ The edit distance between two strings refers to the minimum number of character 
 Given two strings, compute the edit distance between them.
 
 Solution: [Day 31](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-31/solution_day_31.py)
+
+## Daily Coding Problem: Problem #32 [Hard]
+
+This problem was asked by Jane Street.
+
+Suppose you are given a table of currency exchange rates, represented as a 2D array. Determine whether there is a possible arbitrage: that is, whether there is some sequence of trades you can make, starting with some amount A of any currency, so that you can end up with some amount greater than A of that currency.
+
+There are no transaction costs and you can trade fractional quantities.
+
+Solution: [Day 32](https://github.com/subhendusethi/daily-coding-problem/blob/master/day-32/solution_day_32.py)
